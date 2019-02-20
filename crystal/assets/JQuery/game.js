@@ -17,6 +17,7 @@ var lastValue = 0;
 
 var startAndReset = function () {
     $(".crystals").empty();
+    $("#score").text(0);
     var images = [
         "https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwi26_2g38ngAhVqzoMKHRkfAGkQjRx6BAgBEAU&url=https%3A%2F%2Fwww.alamy.com%2Fstock-photo-pink-floyd-advert-for-event-at-londons-crystal-palace-bowl-in-may-57575216.html&psig=AOvVaw3OSeOrGhMSK-JSW4B1NtPB&ust=1550732348601517",
         "https://www.discogs.com/Pink-Floyd-Crystal-Palace-1971/release/7949941",
@@ -49,18 +50,19 @@ startAndReset();
 $(document).on('click', ".crystal", function () {
     var num = parseInt($(this).attr('crystal-value'));
     lastValue += num;
+    $("#score").text(lastValue);
     console.log(this);
     if (lastValue > randomValue) {
         alert("You over crystalized!");
         losses = losses + 1;
-        $("#losses").text("Losses:" + losses);
+        $("#losses").text(losses);
         lastValue = 0;
         startAndReset();
     }
     else if (lastValue === randomValue) {
         alert("Shine on you crazy Diamond!")
         wins = wins + 1;
-        $("#wins").text("Wins:" + wins);
+        $("#wins").text(wins);
         lastValue = 0;
         startAndReset();
     }
