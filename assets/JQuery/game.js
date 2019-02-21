@@ -19,10 +19,10 @@ var startAndReset = function () {
     $(".crystals").empty();
     $("#score").text(0);
     var images = [
-        "https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwi26_2g38ngAhVqzoMKHRkfAGkQjRx6BAgBEAU&url=https%3A%2F%2Fwww.alamy.com%2Fstock-photo-pink-floyd-advert-for-event-at-londons-crystal-palace-bowl-in-may-57575216.html&psig=AOvVaw3OSeOrGhMSK-JSW4B1NtPB&ust=1550732348601517",
-        "https://www.discogs.com/Pink-Floyd-Crystal-Palace-1971/release/7949941",
-        "https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwih8Ye338ngAhWm6oMKHTHlA_gQjRx6BAgBEAU&url=https%3A%2F%2Fwww.discogs.com%2FPink-Floyd-Crystal-Palace-1971%2Frelease%2F7949941&psig=AOvVaw3OSeOrGhMSK-JSW4B1NtPB&ust=1550732348601517",
-        "https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjWtqXB38ngAhUC9YMKHVGvCfcQjRx6BAgBEAU&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F97742254387936829%2F&psig=AOvVaw3OSeOrGhMSK-JSW4B1NtPB&ust=1550732348601517",
+        "assets/images/crystal1.jpeg",
+        "assets/images/crystal2.jpeg",
+        "assets/images/crystal3.jpeg",
+        "assets/images/crystal5.jpg",
     ]
 
     randomValue = Math.floor(Math.random() * 102) + 19;
